@@ -17,27 +17,25 @@ local blue     = { front='#2f87fb', back ='#eaf3ff'}
 
 --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
 --                                            ║
---                                            ║
---                                            ║
 --                           SYNTAX COLORING  ║
---                                            ║
 --                                            ║
 --                                            ║
 --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
 
 MADtheme.general = {
-   { selector = 'background',        color =  base},
-   { selector = 'invisibles',        color = '#E0E0E0'},
-   { selector = 'lineHighlight',     color = '#ffffff'},
-   { selector = 'gutterForeground',  color = '#bbbbbb'},
-   { selector = 'foreground',        color = '#222222'},
-   { selector = 'selection',         color = '#ffffff'},
-   { selector = 'selectionBorder',   color = '#000000'},
-   { selector = 'caret',             color = '#000000'},
-   { selector = 'brackets',          color = '#839496'},
-   { selector = 'guide',             color = '#dddddd'},
-   { selector = 'activeGuide',       color = '#ffffff'},
-   { selector = 'inactiveSelection', color = '#61E880'},
+   { selector = 'background',                   color =  base},
+   { selector = 'invisibles',                   color = '#E0E0E0'},
+   { selector = 'lineHighlight',                color = '#ffffff'},
+   { selector = 'gutterForeground',             color = '#bbbbbb'},
+   { selector = 'foreground',                   color = '#222222'},
+   { selector = 'selection',                    color = '#ffffff'},
+   { selector = 'selectionBorder',              color = '#000000'},
+   { selector = 'caret',                        color = '#000000'},
+   { selector = 'brackets',                     color = '#839496'},
+   { selector = 'guide',                        color = '#dddddd'},
+   { selector = 'activeGuide',                  color = '#ffffff'},
+   { selector = 'inactiveSelection',            color = gray},
+   { selector = 'inactiveSelectionForeground', color = 'white'},
    { selector = 'findHighlight',     color = '#FFE792'},
 }
 
@@ -272,10 +270,7 @@ local avaiLableLanguages = {
 
 --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
 --                                           ║
---                                           ║
---                                           ║
 --                         KNIT .tmTheme XML ║
---                                           ║
 --                                           ║
 --                                           ║
 --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
