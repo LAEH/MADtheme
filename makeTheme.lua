@@ -42,7 +42,6 @@ MADtheme.general = {
 }
 
 MADtheme.language ={
-
    lua = {
 
       --QUOTES
@@ -140,7 +139,6 @@ MADtheme.language ={
          selector= 'punctuation',
       }
    },
-
    css = {
       {
          selector = 'entity.name.tag.css',
@@ -223,7 +221,6 @@ MADtheme.language ={
          color = pink.front,
       }
    },
-
    markdown = {
       {
          name = 'Markdown punctuation',
