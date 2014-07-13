@@ -1,7 +1,5 @@
 MAD01
 =====
 
-Screen No1
-----------
 
-![Alt text](img/screen1.png)
+![Screen No1](img/screen1.png)
