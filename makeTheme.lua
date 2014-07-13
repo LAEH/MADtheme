@@ -15,27 +15,26 @@ local black    = { front='#9fa0a4', back ='#f6f6f6'}
 local lightblue= { front='#65d0fc', back ='#f0fbff'}
 local blue     = { front='#2f87fb', back ='#eaf3ff'}
 
---┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
---                                            ║
---                           SYNTAX COLORING  ║
---                                            ║
---                                            ║
---┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║                                            ║
+--║                           SYNTAX COLORING  ║
+--║                                            ║
+--║                                            ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
 
 MADtheme.general = {
-   { selector = 'background',                   color =  base},
-   { selector = 'invisibles',                   color = '#E0E0E0'},
-   { selector = 'lineHighlight',                color = '#ffffff'},
-   { selector = 'gutterForeground',             color = '#bbbbbb'},
-   { selector = 'foreground',                   color = '#222222'},
-   { selector = 'selection',                    color = '#ffffff'},
-   { selector = 'selectionBorder',              color = '#000000'},
-   { selector = 'caret',                        color = '#000000'},
-   { selector = 'brackets',                     color = '#839496'},
-   { selector = 'guide',                        color = '#dddddd'},
-   { selector = 'activeGuide',                  color = '#ffffff'},
-   { selector = 'inactiveSelection',            color = gray},
-   { selector = 'inactiveSelectionForeground', color = 'white'},
+   { selector = 'background',        color =  base},
+   { selector = 'invisibles',        color = '#E0E0E0'},
+   { selector = 'lineHighlight',     color = '#ffffff'},
+   { selector = 'gutterForeground',  color = '#bbbbbb'},
+   { selector = 'foreground',        color = '#222222'},
+   { selector = 'selection',         color = '#ffffff'},
+   { selector = 'selectionBorder',   color = '#000000'},
+   { selector = 'caret',             color = '#000000'},
+   { selector = 'brackets',          color = '#839496'},
+   { selector = 'guide',             color = '#dddddd'},
+   { selector = 'activeGuide',       color = '#ffffff'},
+   { selector = 'inactiveSelection', color = yellow.front},
    { selector = 'findHighlight',     color = '#FFE792'},
 }
 
@@ -268,18 +267,19 @@ local avaiLableLanguages = {
    'markdown'
 }
 
---┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
---                                           ║
---                         KNIT .tmTheme XML ║
---                                           ║
---                                           ║
---┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║                                           ║
+--║                         KNIT .tmTheme XML ║
+--║                                           ║
+--║                                           ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
 
 function MADtheme.KNITxml()
 
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-   --                        GENERAL SETTINGS
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║           GENERAL ║
+--║                   ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
    local generalScopes = {}
    for _,scope in ipairs(MADtheme.general) do
       table.insert(generalScopes,
@@ -296,10 +296,10 @@ function MADtheme.KNITxml()
       </dict>
    ]]
 
-
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-   --                                        LANGUAGE
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║         LANGAUGES ║
+--║                   ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
    local languagesStrings = {}
    for _,lang in ipairs(avaiLableLanguages) do
       local syntaxTheme = MADtheme.language[lang]
@@ -338,9 +338,10 @@ function MADtheme.KNITxml()
    end
    local languages = table.concat(languagesStrings)
 
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-   --                                                    GENERAL
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║               XML ║
+--║                   ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
    local xml = [[
       <?xml version="1.0" encoding="UTF-8"?>
       <!DOCTYPE plist
@@ -369,10 +370,10 @@ function MADtheme.KNITxml()
    ]]
    print(col._blue(xml))
 
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-   --                                                                  WRITE
-   --┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-
+--╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
+--║             WRITE ║
+--║                   ║
+--╙┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╜
 
    local me = os.getenv('HOME')
    local time = os.time()
