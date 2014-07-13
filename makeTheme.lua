@@ -13,7 +13,7 @@ local yellow   = { front='#ffd201', back ='#fffbe6'}
 local grey     = { front='#9fa0a4', back ='#f6f6f6'}
 local black    = { front='#9fa0a4', back ='#f6f6f6'}
 local lightblue= { front='#65d0fc', back ='#f0fbff'}
-local blue     = { front='#2f87fb', back ='#eaf3ff'}
+local blue     = { front='#157efb', back ='#eaf3ff'}
 
 --╓┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╖
 --║                                            ║
@@ -45,7 +45,7 @@ MADtheme.language ={
       {
          selector = 'string.quoted.single',
          name = 'LUA block string', -- [[string]]
-         color = pink.front,
+         color= pink.front,
          back = pink.back,
          style='bold italic',
       },
@@ -54,7 +54,7 @@ MADtheme.language ={
          name = 'LUA string',
          color ='#000000',
          back = base,
-         style ='bold italic',
+         style ='black',
       },
       {
          selector= 'constant.character, string',
@@ -62,13 +62,12 @@ MADtheme.language ={
          color = green.front,
          style = 'bold',
       },
-
       --COMMENTS
       {
+      selector = 'comment, comment punctuation',
          name = 'LUA comment',
-         color = '#000',
-         style='bold italic',
-         selector = 'comment, comment punctuation',
+         color = '#bbb',
+         style='medium',
       },
       {
          name = 'LUA comments block',
@@ -106,10 +105,10 @@ MADtheme.language ={
 
       --USER
       {
-         name = 'LUA user function name',-- 'MADweb.' 'MAD '
-         style = 'italic bold',
-         color = violet.front,
          selector = 'entity.name.function',
+         name = 'LUA user function name',-- 'MADweb.' 'MAD '
+         style = 'bold',
+         color = violet.front,
       },
       {
       {
@@ -126,7 +125,8 @@ MADtheme.language ={
       },
       {
          name= 'LUA user variables',--'x, color1'
-         color='#147B8A',
+         style='Medium',
+         color='#222',
          selector = 'variable',
       },
       {
