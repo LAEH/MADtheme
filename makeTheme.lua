@@ -172,8 +172,8 @@ MADtheme.language ={
       {
          selector = 'support.constant.property-value',
          name = 'CSS Property Value',
-         back = pink.back,
-         color = pink.front,
+         back = violet.back,
+         color = violet.front,
       },
       {
          selector = 'constant.other.color.rgb-value',
@@ -190,8 +190,8 @@ MADtheme.language ={
       {
          selector = 'support.constant.font-name',
          name = 'CSS Font Name',
-         back = pink.back,
-         color = pink.front,
+         back = green.back,
+         color = green.front,
       },
       {
          selector = 'punctuation.section.property-list.css',
